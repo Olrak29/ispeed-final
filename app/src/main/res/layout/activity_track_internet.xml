@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.automatic.TrackInternetActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_export"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_2x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:background="@drawable/shape_button_settings"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/track_internet_button_export"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_selectDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginTop="@dimen/distance_2x"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/track_internet_select_date"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/et_getDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_1.75x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:ems="10"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/track_internet_click_here"
+                android:textColor="@color/lightGray"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_selectDate"
+                app:layout_constraintTop_toTopOf="@+id/tv_selectDate" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginTop="@dimen/distance_2x"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/tracking_internet_start_time"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_getDate" />
+
+            <TextView
+                android:id="@+id/tv_startinghour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_1.75x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/track_internet_click_here"
+                android:textColor="@color/lightGray"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginTop="@dimen/distance_2x"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/track_internet_end_time"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_startinghour" />
+
+            <TextView
+                android:id="@+id/tv_endinghour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_1.75x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/track_internet_click_here"
+                android:textColor="@color/lightGray"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select Frequency"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_endinghour" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnr_frequency"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/distance_1.75x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginTop="@dimen/distance_2x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/track_internet_automatic_tracking"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_export" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_startTracking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginTop="@dimen/distance_3x"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_button"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/track_internet_button_start"
+                app:layout_constraintEnd_toStartOf="@+id/btn_stopTracking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_stopTracking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_2x"
+                android:layout_marginEnd="@dimen/distance_2x"
+                android:background="@drawable/shape_button"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/track_internet_button_stop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_startTracking"
+                app:layout_constraintTop_toTopOf="@+id/btn_startTracking" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/distance_4x"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_startTracking" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/recyclerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/internet_status_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_1x"
+                    android:paddingHorizontal="4dp"
+                    android:layout_marginBottom="@dimen/distance_3x"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

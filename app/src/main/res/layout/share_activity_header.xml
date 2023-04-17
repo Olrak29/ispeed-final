@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/nameLbl"
+            app:layout_constraintStart_toStartOf="@id/userName"
+            app:layout_constraintTop_toTopOf="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/nameVal"
+            app:layout_constraintEnd_toEndOf="@id/userName"
+            app:layout_constraintTop_toTopOf="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="temp name val"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/dateLbl"
+            app:layout_constraintStart_toStartOf="@id/userDate"
+            app:layout_constraintTop_toTopOf="@id/userDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Date:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/dateVal"
+            app:layout_constraintEnd_toEndOf="@id/userDate"
+            app:layout_constraintTop_toTopOf="@id/userDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="tempdate val"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recyclerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/timeLbl"
+            app:layout_constraintStart_toStartOf="@id/recyclerHeader"
+            app:layout_constraintTop_toTopOf="@id/recyclerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/track_internet_time"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/statusLbl"
+            app:layout_constraintEnd_toEndOf="@id/recyclerHeader"
+            app:layout_constraintTop_toTopOf="@id/recyclerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

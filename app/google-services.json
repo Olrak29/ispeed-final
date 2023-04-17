@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "278601873437",
+    "project_id": "ispeed-a06d6",
+    "storage_bucket": "ispeed-a06d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278601873437:android:12c7d3ff07eed04b3d2ef4",
+        "android_client_info": {
+          "package_name": "com.example.ispeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278601873437-fg24bqlbksjm02bn8ttilrd4vdad15qo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ispeed",
+            "certificate_hash": "328b355182d5780f3bfb38794a65a1e328b390f1"
+          }
+        },
+        {
+          "client_id": "278601873437-arcltg3bhd2s4jhvaavs0tbqrtht6jku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO_FnQ3khe9CC91okDJ-_TAYBxqGzlZZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278601873437-arcltg3bhd2s4jhvaavs0tbqrtht6jku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

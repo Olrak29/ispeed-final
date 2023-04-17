@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="distance_1x">8dp</dimen>
+    <dimen name="distance_1.5x">12dp</dimen>
+    <dimen name="distance_1.75x">14dp</dimen>
+    <dimen name="distance_2x">16dp</dimen>
+    <dimen name="distance_2.5x">20dp</dimen>
+    <dimen name="distance_3x">24dp</dimen>
+    <dimen name="distance_4x">32dp</dimen>
+</resources>
